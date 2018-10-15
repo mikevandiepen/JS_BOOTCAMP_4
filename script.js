@@ -222,10 +222,10 @@ var part4 = {
         // Zorg ervoor dat de opdracht goed wordt uitgevoerd en dat de content wordt bijgewerkt.
         var student = {
             name: "Mike van Diepen",
-            group: group,
-            class: "FRO"
+            group: "MD2A",
+            class: ["FRO", "BAP", "PROJ"]
         };
-        var result = "Student "+ student["name"] +" zit in groep "+ student["group"] +" en zijn eerste les is "+ student["class"] ;
+        var result = "Student "+ student.name +" zit in groep "+ student.group +" en zijn eerste les is "+ student.class[0] ;
 
         updateContent("Opdracht 12 - Object aanmaken", description, result);
     },
@@ -252,7 +252,7 @@ var part4 = {
             "Maja Garcia,MD2B",
             "Elyas Galloway,MD2B",
             "Duncan Bull,MD2B"
-        ]
+        ];
 
         var arrayPrint = "";
         for (var i = 0; i < studentsArray.length; i++) {
